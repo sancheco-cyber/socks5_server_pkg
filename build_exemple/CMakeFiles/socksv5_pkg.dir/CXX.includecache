@@ -7,10 +7,10 @@
 #IncludeRegexTransform: 
 
 /home/sancheco/thales_ws/socksv5_project/socks5_server_pkg/socks5_srv/main.cpp
-iostream
--
 socks_server.h
 /home/sancheco/thales_ws/socksv5_project/socks5_server_pkg/socks5_srv/socks_server.h
+string
+-
 
 /home/sancheco/thales_ws/socksv5_project/socks5_server_pkg/socks5_srv/socks_client.cpp
 socks_client.h

@@ -6,7 +6,7 @@
 #include <iostream>
 
 
-SocksServer::SocksServer() : _stop_srv(false)
+SocksServer::SocksServer(int life) : _stop_srv(false), _life(life)
 {
     /* Configuration de l'adresse du serveur */
     _srv_addr.sin_family = AF_INET;
@@ -27,7 +27,6 @@ int SocksServer::start()
     sockaddr_in _client_addr = {0};                  /* Structure sockaddr_in de l'adresse du client */
     socklen_t _client_len = sizeof(_client_addr);    /* Taille */
     int exit = -1;                                   /* Valeur de retour de la fonction */
-    int alive = 2;                                   /* Durée d'exécution du serveur (min) */
 
     /* Crée un socket */
     _srv_fd = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
@@ -61,7 +60,7 @@ int SocksServer::start()
     if(exit != -1)
     {
         /* Lancement du thread permettant la fermuture du serveur */
-        std::thread stop_thread(&SocksServer::shutdown, this, alive);
+        std::thread stop_thread(&SocksServer::shutdown, this, _life);
 
         /* Tant que la condition d'arrêt du client n'est pas remplie */
         while (not _stop_srv)
@@ -91,6 +90,6 @@ void SocksServer::hdlClient(int client_fd)
 {
     SocksClient client(client_fd);
 
-    /* Lancer la gestion du client */
+    /* Lance la gestion du client */
     client.start();
 }

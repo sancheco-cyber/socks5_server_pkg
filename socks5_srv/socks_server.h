@@ -39,6 +39,9 @@ private:
     int _srv_fd;
     sockaddr_in _srv_addr;
 
+    /* Durée de vie du serveur (min) */
+    int _life;
+
     /* Membre permettant d'arrêter le serveur */
     bool _stop_srv;
 
@@ -49,7 +52,7 @@ private:
     static void hdlClient(int client_fd);
 
 public:
-    SocksServer();
+    SocksServer(int life);
 
     /* Fonction de démarrage du client */
     int start();

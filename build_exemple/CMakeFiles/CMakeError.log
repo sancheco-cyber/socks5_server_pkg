@@ -1,21 +1,21 @@
 Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/sancheco/thales_ws/socksv5_project/socks5_server_pkg/build_exemple/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_a7fbb/fast && /usr/bin/make -f CMakeFiles/cmTC_a7fbb.dir/build.make CMakeFiles/cmTC_a7fbb.dir/build
+Run Build Command(s):/usr/bin/make cmTC_574a8/fast && /usr/bin/make -f CMakeFiles/cmTC_574a8.dir/build.make CMakeFiles/cmTC_574a8.dir/build
 make[1]: Entering directory '/home/sancheco/thales_ws/socksv5_project/socks5_server_pkg/build_exemple/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_a7fbb.dir/src.cxx.o
-/usr/bin/c++    -m32 -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_a7fbb.dir/src.cxx.o -c /home/sancheco/thales_ws/socksv5_project/socks5_server_pkg/build_exemple/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTC_a7fbb
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7fbb.dir/link.txt --verbose=1
-/usr/bin/c++   -m32 -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_a7fbb.dir/src.cxx.o  -o cmTC_a7fbb 
-/usr/bin/ld: CMakeFiles/cmTC_a7fbb.dir/src.cxx.o: in function `main':
+Building CXX object CMakeFiles/cmTC_574a8.dir/src.cxx.o
+/usr/bin/c++    -m32 -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_574a8.dir/src.cxx.o -c /home/sancheco/thales_ws/socksv5_project/socks5_server_pkg/build_exemple/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_574a8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_574a8.dir/link.txt --verbose=1
+/usr/bin/c++   -m32 -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_574a8.dir/src.cxx.o  -o cmTC_574a8 
+/usr/bin/ld: CMakeFiles/cmTC_574a8.dir/src.cxx.o: in function `main':
 src.cxx:(.text+0x52): undefined reference to `pthread_create'
 /usr/bin/ld: src.cxx:(.text+0x61): undefined reference to `pthread_detach'
 /usr/bin/ld: src.cxx:(.text+0x72): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_a7fbb.dir/build.make:87: cmTC_a7fbb] Error 1
+make[1]: *** [CMakeFiles/cmTC_574a8.dir/build.make:87: cmTC_574a8] Error 1
 make[1]: Leaving directory '/home/sancheco/thales_ws/socksv5_project/socks5_server_pkg/build_exemple/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_a7fbb/fast] Error 2
+make: *** [Makefile:121: cmTC_574a8/fast] Error 2
 
 
 Source file was:
@@ -41,18 +41,18 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/sancheco/thales_ws/socksv5_project/socks5_server_pkg/build_exemple/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_96b88/fast && /usr/bin/make -f CMakeFiles/cmTC_96b88.dir/build.make CMakeFiles/cmTC_96b88.dir/build
+Run Build Command(s):/usr/bin/make cmTC_f3f5e/fast && /usr/bin/make -f CMakeFiles/cmTC_f3f5e.dir/build.make CMakeFiles/cmTC_f3f5e.dir/build
 make[1]: Entering directory '/home/sancheco/thales_ws/socksv5_project/socks5_server_pkg/build_exemple/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_96b88.dir/CheckFunctionExists.cxx.o
-/usr/bin/c++    -m32 -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_96b88.dir/CheckFunctionExists.cxx.o -c /home/sancheco/thales_ws/socksv5_project/socks5_server_pkg/build_exemple/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
-Linking CXX executable cmTC_96b88
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_96b88.dir/link.txt --verbose=1
-/usr/bin/c++   -m32 -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_96b88.dir/CheckFunctionExists.cxx.o  -o cmTC_96b88  -lpthreads 
+Building CXX object CMakeFiles/cmTC_f3f5e.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -m32 -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_f3f5e.dir/CheckFunctionExists.cxx.o -c /home/sancheco/thales_ws/socksv5_project/socks5_server_pkg/build_exemple/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_f3f5e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f3f5e.dir/link.txt --verbose=1
+/usr/bin/c++   -m32 -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_f3f5e.dir/CheckFunctionExists.cxx.o  -o cmTC_f3f5e  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_96b88.dir/build.make:87: cmTC_96b88] Error 1
+make[1]: *** [CMakeFiles/cmTC_f3f5e.dir/build.make:87: cmTC_f3f5e] Error 1
 make[1]: Leaving directory '/home/sancheco/thales_ws/socksv5_project/socks5_server_pkg/build_exemple/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_96b88/fast] Error 2
+make: *** [Makefile:121: cmTC_f3f5e/fast] Error 2
 
 
 
