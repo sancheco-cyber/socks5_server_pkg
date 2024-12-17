@@ -1,0 +1,3 @@
+/home/sancheco/thales_ws/socksv5_project/socks5_server_pkg/build_exemple/CMakeFiles/rebuild_cache.dir
+/home/sancheco/thales_ws/socksv5_project/socks5_server_pkg/build_exemple/CMakeFiles/edit_cache.dir
+/home/sancheco/thales_ws/socksv5_project/socks5_server_pkg/build_exemple/CMakeFiles/socksv5_pkg.dir

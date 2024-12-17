@@ -1,0 +1,1 @@
+/usr/bin/c++   -m32   CMakeFiles/socksv5_pkg.dir/main.cpp.o CMakeFiles/socksv5_pkg.dir/socks_server.cpp.o CMakeFiles/socksv5_pkg.dir/socks_client.cpp.o  -o socksv5_pkg  -lpthread 
