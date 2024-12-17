@@ -48,7 +48,12 @@ Navigateur : Chrome Version 131.0.6778.139
 
 Paramètre du proxy (Socks Host): localhost 1080
 
+Navigation libre sur Internet (Youtube, www.lemonde.fr, etc.)
+
+Le serveur s'arrète automatiquement au bout de 5min.
+
 ## Todo
 - Activation des log avec la librairie `<iostream>` uniquement en mode `DEBUG`
 - Utiliser un pool de Thread pour la gestion des clients afin de pouvoir les maitriser.
+- Le serveur s'arrète automatiquement au bout de 5min. Adapter l'arrêt du serveur à l'usage
 - ...
